@@ -417,7 +417,7 @@
 
 #+sbcl
 (defmethod augment-with-variable ((env sb-kernel:lexenv) var)
-  (sb-c::make-lexenv :default env :vars (list (cons var t))))
+  (sb-cltl2:augment-environment env :variable (list var)))
 
 #+sbcl
 (defmethod augment-with-function ((env sb-kernel:lexenv) fun)

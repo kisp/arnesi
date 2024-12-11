@@ -50,7 +50,7 @@
                              (:file "vector" :depends-on ("packages" "flow-control"))
                              (:file "walk" :depends-on ("packages" "list" "mopp" "lexenv" "one-liners")))))
   :properties ((:features "v1.4.0" "v1.4.1" "v1.4.2" "cc-interpreter" "join-strings-return-value" "getenv"))
-  :depends-on ("collectors")
+  :depends-on ("collectors" :sb-cltl2)
   :in-order-to ((test-op (test-op "arnesi/test"))))
 
 (defsystem "arnesi/test"
